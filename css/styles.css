@@ -55,7 +55,7 @@ nav .links {
   height: 42px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 15px;
   font-weight: normal;
@@ -69,12 +69,32 @@ nav .links .last-link {
   padding-right: 0;
 }
 
+@media all and (max-width: 1000px) {
+  nav .logo {
+    margin-left: 50px;
+  }
+  nav .links {
+    margin-right: 50px;
+  }
+}
 @media all and (max-width: 920px) {
   nav .logo {
     margin-left: 50px;
   }
   nav .links {
     margin-right: 50px;
+  }
+}
+@media all and (max-width: 870px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav .logo {
+    margin: 0;
+  }
+  nav .links {
+    margin: 0;
   }
 }
 .home {

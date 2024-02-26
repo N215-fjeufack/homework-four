@@ -41,7 +41,7 @@ nav {
     // background-color: red;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
     font-size: 15px;
@@ -50,10 +50,30 @@ nav {
     a {
       border-right: 1px solid $site-blue;
       padding-right: 35px;
+      // background-color: aqua;
     }
     .last-link {
       border: none;
       padding-right: 0;
+    }
+  }
+}
+
+@media all and (max-width: 1000px) {
+  nav {
+    a {
+    }
+    .logo {
+      margin-left: 50px;
+      span {
+      }
+    }
+    .links {
+      margin-right: 50px;
+      a {
+      }
+      .last-link {
+      }
     }
   }
 }
@@ -69,6 +89,27 @@ nav {
     }
     .links {
       margin-right: 50px;
+      a {
+      }
+      .last-link {
+      }
+    }
+  }
+}
+
+@media all and (max-width: 870px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+    }
+    .logo {
+      margin: 0;
+      span {
+      }
+    }
+    .links {
+      margin: 0;
       a {
       }
       .last-link {
